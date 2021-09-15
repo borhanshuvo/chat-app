@@ -40,7 +40,7 @@ const addUserValidators = [
         if (user) {
           throw createError("Mobile already is use!");
         }
-      } catch {
+      } catch (err) {
         throw createError(err.message);
       }
     }),
